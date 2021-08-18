@@ -1,0 +1,298 @@
+@import url(./base.css);
+
+@import url(./header.css);
+
+@import url(./footer.css);
+
+.service {
+    padding: 130px 0;
+}
+
+.service-heading {
+    font-size: 44px;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.service-slide-container {
+    --col-num: 3;
+    --col-space: 16px;
+    overflow: hidden;
+    width: 100%;
+    min-height: 430px;
+    padding: 0 14px;
+    position: relative;
+}
+
+.service-slide-item {
+    flex-shrink: 0;
+    position: relative;
+    height: max-content;
+}
+
+.service-slide-item-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.service-slide-item-info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--white-color);
+    width: 290px;
+    padding: 32px 26px;
+    border-radius: 10px;
+    color: var(--text-color);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.service-slide-item-link {
+    color: var(--text-color);
+}
+
+.service-slide-item-name {
+    font-size: 2.3rem;
+    transition: 0.2s ease;
+}
+
+.service-slide-item-name:hover {
+    color: var(--primary-color);
+}
+
+.service-slide-item-desc {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-top: 16px;
+}
+
+.slide-control-btn {
+    font-size: 3.4rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slide-control-btn-prev {
+    left: 0;
+}
+
+.slide-control-btn-after {
+    right: 0;
+}
+
+.section-2 {
+    background: url(../img/section2-bg.webp) center / cover no-repeat;
+    color: var(--text-color);
+}
+
+.section-2-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.section-2-img {
+    border-radius: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.section-2-content {
+    padding-left: 132px;
+}
+
+.section-2-content-heading {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
+.section-2-content p {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    line-height: 1.5;
+    word-spacing: 1px;
+}
+
+.section-2-content-btn {
+    padding: 18px 42px;
+    font-size: 1.7rem;
+    margin-top: 50px;
+}
+
+.section-3 {
+    background: url(../img/section3-bg.jpg) top left / cover no-repeat;
+    height: 670px;
+    position: relative;
+}
+
+.section-3-card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    background-color: var(--white-color);
+    padding: 60px;
+    color: var(--text-color);
+    max-width: 420px;
+    border-radius: 20px;
+}
+
+.section-3-card-img {
+    margin-bottom: 12px;
+    width: 67px;
+}
+
+.section-3-card-heading-link {
+    display: block;
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    transition: 0.2s linear;
+}
+
+.section-3-card-heading-link:hover {
+    color: var(--primary-color)
+}
+.section-3-card-time {
+    display: block;
+    font-size: 1.7rem;
+    margin-top: 12px;
+}
+
+.section-3-card-btn {
+    padding: 16px 32px;
+    font-size: 1.7rem;
+    margin-top: 44px;
+}
+
+
+.quotes-section {
+    background: url(../img/quocte-bg.webp) right center no-repeat;
+    height: 620px;
+    --col-num: 1;
+    --col-space: 0;
+}
+
+.quotes-section-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.quotes-container {
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-item {
+    text-align: center;
+    color: var(--text-color);
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.quote-item-auth-img {
+    width: 132px;
+    margin-bottom: 32px;
+}
+
+.quote-item-content {
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 1.5;
+    padding: 0 12px;
+}
+
+.quote-item-auth-info {
+    margin-top: 60px;
+}
+
+.quote-item-auth-info span {
+    display: block;
+}
+
+.quote-item-auth-name {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.quote-item-auth-organization {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.quote-control-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.6rem;
+    cursor: pointer;
+    color: #AAA;
+}
+
+.quote-control-btn:hover {
+    color: var(--text-color);
+}
+
+.quote-control-btn-prev {
+    left: 10px;
+}
+
+.quote-control-btn-after {
+    right: 10px;
+}
+
+.donation-section {
+    min-height: 420px;
+    background: url(../img/donation-bg.webp) center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+}
+
+.donation-content {
+    text-align: center;
+    max-width: 650px;
+}
+
+.donation-heading {
+    font-size: 4.4rem;
+    font-weight: 900;
+}
+
+.donation-desc {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 24px 0;
+}
+
+.donation-btn {
+    padding: 18px 44px;
+    font-size: 1.7rem;
+    transition: 0.3s linear;
+    font-weight: 500;
+}
+
+.donation-btn-more {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+
+.donation-btn-more:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color)
+}
+
+.donation-btn + .donation-btn {
+    margin-left: 24px;
+}
